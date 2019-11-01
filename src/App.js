@@ -58,7 +58,7 @@ class App extends Component {
                                         <FormGroup>
                                             <GoogleMap
                                                 bootstrapURLKeys={{
-                                                    key: 'AIzaSyB7sugvvSWrb_2mgEQ2pN9lrMMvYp1alEE',
+                                                    key: 'INSERT YOU GOOGLE MAPS KEY',
                                                     libraries: ['places', 'geometry']
                                                 }}
                                                 yesIWantToUseGoogleMapApiInternals
