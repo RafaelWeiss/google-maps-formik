@@ -46,7 +46,7 @@ class App extends Component {
                                         <Input type="text" name="latitude" id="latitude" value={values.latitude} disabled/>
                                     </Col>
                                     <Col>
-                                        <Label for="latitude">Longitude: </Label>
+                                        <Label for="logitude">Longitude: </Label>
                                         <Input type="text" name="logitude" id="logitude" value={values.longitude} disabled/>
                                     </Col>
                                     <Col>
