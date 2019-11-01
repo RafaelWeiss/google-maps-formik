@@ -30,10 +30,10 @@ Install project dependencies
 npm install or yarn install
 ```
 
-And start the application using Expo
+And start the application
 
 ```
-expo start
+npm start
 ```
 
 Run tests
