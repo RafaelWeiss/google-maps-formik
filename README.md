@@ -3,9 +3,9 @@
 
 A simple example with GoogleMaps and Formik
 
-## APP
+## Page
 
-A app created by using: 
+A page created by using: 
 - React
 - Google-Maps
 - Formik
