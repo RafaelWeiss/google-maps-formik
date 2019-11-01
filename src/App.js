@@ -16,6 +16,7 @@ class App extends Component {
     handleFormSubmit = (formikValues) => {
         console.log(formikValues);
     };
+
     renderMarkers(map, maps, latitude, longitude, setFieldValue) {
         const marker = new maps.Marker({
             position: { lat: latitude, lng: longitude },
