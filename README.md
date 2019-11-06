@@ -9,6 +9,7 @@ A page created by using:
 - React
 - Google-Maps
 - Formik
+- Reactstrap
 
 ## Installing
 
@@ -44,7 +45,7 @@ npm test
 
 ## Versions
 
-v1.0
+v0.2
 
 -   Default project implementation
 
