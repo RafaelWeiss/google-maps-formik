@@ -29,6 +29,13 @@ const App = () => {
         marker.addListener('dragend', (event) => onMarkerDragEnd(event, setFieldValue));
     };
 
+    const hasPosition = () => {
+        return currentPosition && currentPosition.latitude && currentPosition.longitude;
+    };
+    const hasPositionIsNull = () => {
+        return currentPosition && currentPosition.latitude === null && currentPosition.longitude === null;
+    };
+
     return (
         <div className="App">
             <Formik
@@ -65,13 +72,12 @@ const App = () => {
                                         </Button>
                                     </Form>
                                     <br />
-                                    {currentPosition && currentPosition.latitude ? (
+                                    {hasPosition() && (
                                         <Alert color="success">
-                                            Your current position is : [{currentPosition.latitude}, {currentPosition.longitude}]
+                                            Your current position is: [{currentPosition.latitude}, {currentPosition.longitude}]
                                         </Alert>
-                                    ) : (
-                                        <Alert color="warning">Selecione uma posição no mapa!</Alert>
                                     )}
+                                    {hasPositionIsNull() && <Alert color="warning">Please! Select a position on the map!</Alert>}
                                 </Col>
                                 <Col md={7}>
                                     <FormGroup>
